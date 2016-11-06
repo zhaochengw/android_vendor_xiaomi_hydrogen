@@ -40,6 +40,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/bin/cnd:system/bin/cnd  \
     vendor/xiaomi/hydrogen/proprietary/bin/netmgrd:system/bin/netmgrd  \
     vendor/xiaomi/hydrogen/proprietary/bin/adsprpcd:system/bin/adsprpcd  \
+    vendor/xiaomi/hydrogen/proprietary/bin/tp_node.sh:system/bin/tp_node.sh  \
     vendor/xiaomi/hydrogen/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml  \
     vendor/xiaomi/hydrogen/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml  \
     vendor/xiaomi/hydrogen/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml  \
