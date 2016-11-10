@@ -254,7 +254,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libStDrvInt.so:system/vendor/lib64/libStDrvInt.so \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libsecureui.so:system/vendor/lib64/libsecureui.so \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so  \
