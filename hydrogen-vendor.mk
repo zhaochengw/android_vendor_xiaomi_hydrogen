@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/bin/time_daemon:system/bin/time_daemon  \
     vendor/xiaomi/hydrogen/proprietary/bin/btnvtool:system/bin/btnvtool  \
     vendor/xiaomi/hydrogen/proprietary/bin/loc_launcher:system/bin/loc_launcher  \
+    vendor/xiaomi/hydrogen/proprietary/bin/cnss-daemon:system/bin/cnss-daemon  \
     vendor/xiaomi/hydrogen/proprietary/bin/cnd:system/bin/cnd  \
     vendor/xiaomi/hydrogen/proprietary/bin/netmgrd:system/bin/netmgrd  \
     vendor/xiaomi/hydrogen/proprietary/bin/adsprpcd:system/bin/adsprpcd  \
@@ -51,6 +52,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml  \
     vendor/xiaomi/hydrogen/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml  \
     vendor/xiaomi/hydrogen/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml  \
+    vendor/xiaomi/hydrogen/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml  \
+    vendor/xiaomi/hydrogen/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml  \
     vendor/xiaomi/hydrogen/proprietary/etc/modem/Diag.cfg:system/etc/modem/Diag.cfg  \
     vendor/xiaomi/hydrogen/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml  \
     vendor/xiaomi/hydrogen/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf  \
@@ -132,6 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon  \
     vendor/xiaomi/hydrogen/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine  \
     vendor/xiaomi/hydrogen/proprietary/vendor/bin/perfd:system/vendor/bin/perfd  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/bin/qti:system/vendor/bin/qti  \
     vendor/xiaomi/hydrogen/proprietary/vendor/etc/diracmobile.config:system/vendor/etc/diracmobile.config  \
     vendor/xiaomi/hydrogen/proprietary/vendor/qcril.db:system/vendor/qcril.db  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so  \
@@ -158,6 +162,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so  \
@@ -271,6 +276,46 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib/libchromatix_ov16880_qtec_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov16880_qtec_cpp_hfr_120.so  \
@@ -1083,5 +1128,8 @@ PRODUCT_PACKAGES +=  \
     com.qualcomm.location  \
     qcrilmsgtunnel  \
     QtiTetherService  \
+    ims  \
+    imssettings  \
     qcnvitems  \
-    qcrilhook
+    qcrilhook  \
+imscmlibrary
