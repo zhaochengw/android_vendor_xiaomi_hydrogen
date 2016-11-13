@@ -278,7 +278,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so  \
-    vendor/xiaomi/hydrogen/proprietary/vendor/lib/libimsmedia_jni.so.so:system/vendor/lib/libimsmedia_jni.so.so  \
+    vendor/xiaomi/hydrogen/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so  \
     vendor/xiaomi/hydrogen/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so  \
